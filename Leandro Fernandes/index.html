@@ -1,27 +1,46 @@
 <!doctype hmtl>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <title>Checkout</title>
-      <link rel="stylesheet" type="text/css" href="myStyle.css">
-      <link rel="stylesheet" href="bootstrap-3.3.4/dist/css/bootstrap.css">
-   </head>
-   <body>
-      <div id="masterDiv">
-         <form class="form-horizontal">
-            <fieldset>
-               <!-- Form Name -->
-               <legend>Checkout</legend>
-               <!-- Text input-->
-               <div class="control-group">
-                  <label class="control-label" for="Codigo da Hospedagem">Text Input</label>
-                  <div class="controls">
-                     <input id="Codigo da Hospedagem" name="Codigo da Hospedagem" type="text" placeholder="Digite o código ex: 465-784" class="input-xlarge">
-                      
-                  </div>
-               </div>
-            </fieldset>
-         </form>
-      </div>
-   </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="masterDiv">
+        <div id="checkoutLabel" style="background-color:red">Checkout</div>
+
+
+        <div id="envelopa">
+            <div style="background-color:green" id="envelopaLeft"> Código da Hospedagem
+                <input id='inputCodigoHospedagem' type: 'text'>
+            </div>
+            <div style="background-color:purple" id="envelopaRight">
+                <p>Cliente: João Alberto de Nobrega</p>
+                <p>E-mail: joao_pedro@hotmail.com</p>
+            </div>
+        </div>
+
+
+        <div id='divDataSaida' style="width:700px">Data de Saída:
+            <input id='inputDataSaida' type='date'> </div>
+
+
+        <div id='divHospedagem' class='majorBlock'></div>
+        <div id='divHospedagem' class='majorBlock'></div>
+
+        <div id="totalGeral"></div>
+        <div id='botoes'>
+            <button id='botaoGerarRelatorio'>Gerar Relatorio</button>
+            <button id='botaoConfirmarCheckout'>Confirmar Checkout</button>
+        </div>
+
+
+
+
+    </div>
+</body>
+
 </html>
