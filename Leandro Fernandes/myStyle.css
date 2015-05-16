@@ -1,0 +1,10 @@
+#masterDiv{
+	width: 40%;
+	height: 60%;
+	background-color: yellow;
+	border-radius: 20px;
+	margin-left: 50px;
+	margin-top: 50px;
+	padding: 20 20 20 20;
+	border: solid black 2px;
+}
