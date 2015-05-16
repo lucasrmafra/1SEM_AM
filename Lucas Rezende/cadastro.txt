@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Clientes</title>
+</head>
+<body>
+<form class="form-horizontal">
+<fieldset>
+
+
+<legend>Cadastro</legend>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Nome">*NOME COMPLETO:</label>  
+  <div class="col-md-4">
+  <input id="Nome" name="Nome" type="text" placeholder="nome" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Cpf">*CPF:</label>  
+  <div class="col-md-4">
+  <input id="Cpf" name="Cpf" type="text" placeholder="cpf" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Rg">*RG:</label>  
+  <div class="col-md-4">
+  <input id="Rg" name="Rg" type="text" placeholder="rg" class="form-control input-md">
+    
+  </div>
+</div>
+  <div>
+         *DATA DE NASCIMENTO:     
+        <input type="date" name="dataNascimento"/>
+         </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Cep">*CEP:</label>  
+  <div class="col-md-4">
+  <input id="Cep" name="Cep" type="text" placeholder="cep" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="estado">*ESTADO:</label>
+  <div class="col-md-4">
+    <select id="estado" name="estado" class="form-control">
+      <option value="(AC)">Acre (AC)</option>
+      <option value="(AL)">Alagoas (AL)</option>
+      <option value="(AP)">Amapá (AP)</option>
+      <option value="(AM)">Amazonas (AM)</option>
+      <option value="(BA)">Bahia (BA)</option>
+      <option value="(CE)">Ceará (CE)</option>
+      <option value="(DF)">Distrito Federal (DF)</option>
+      <option value="(ES)">Espírito Santo (ES)</option>
+      <option value="(GO)">Goiás (GO)</option>
+      <option value="(MA)">Maranhão (MA)</option>
+      <option value="(MT)">Mato Grosso (MT)</option>
+      <option value="(MS)">Mato Grosso do Sul (MS)</option>
+      <option value="(MG)">Minas Gerais (MG)</option>
+      <option value="(PA)">Pará (PA)</option>
+      <option value="(PB)">Paraíba (PB)</option>
+      <option value="(PR)">Paraná (PR)</option>
+      <option value="(PE)">Pernambuco (PE)</option>
+      <option value="(PI)">Piauí (PI)</option>
+      <option value="(RJ)">Rio de Janeiro (RJ)</option>
+      <option value="(RN)">Rio Grande do Norte (RN)</option>
+      <option value="(RS)">Rio Grande do Sul (RS)</option>
+      <option value="(RO)">Rondônia (RO)</option>
+      <option value="(RR)">Roraima (RR)</option>
+      <option value="(SC)">Santa Catarina (SC)</option>
+      <option value="(SP)">São Paulo (SP)</option>
+      <option value="(SE)">Sergipe (SE)</option>
+      <option value="(TO)">Tocantins (TO)</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cidade">*CIDADE:</label>  
+  <div class="col-md-4">
+  <input id="cidade" name="cidade" type="text" placeholder="cidade" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="logradouro">*LOGRADOURO</label>  
+  <div class="col-md-4">
+  <input id="logradouro" name="logradouro" type="text" placeholder="logradouro" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bairro">*BAIRRO:</label>  
+  <div class="col-md-4">
+  <input id="bairro" name="bairro" type="text" placeholder="bairro" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Complemento">COMPLEMENTO:</label>  
+  <div class="col-md-4">
+  <input id="Complemento" name="Complemento" type="text" placeholder="Complemento" class="form-control input-md">
+    
+  </div>
+</div>
+   <div>E-MAIL:<input type="email" name="email"/><div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Senha">SENHA:</label>
+  <div class="col-md-4">
+    <input id="Senha" name="Senha" type="password" placeholder="senha" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Enviar"></label>
+  <div class="col-md-4">
+    <button id="Enviar" name="Enviar" class="btn btn-primary">ENVIAR</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</body>
+</html>

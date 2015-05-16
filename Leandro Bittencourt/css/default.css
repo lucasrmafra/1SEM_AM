@@ -1,0 +1,21 @@
+.titleHighliht{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+
+
+
+/*FOOTER BEGIN*/
+.bottomHighlight {
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+}
+.bottomAlign {
+    margin-top: 10px;
+}
+
+.bottomRight {
+    float:right;
+    margin-top: 17px;
+}
+/*FOOTER END*/
