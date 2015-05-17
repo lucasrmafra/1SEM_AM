@@ -2,10 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta lang="pt_br">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reservar quarto</title>
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
         <link href="css/default.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Palanquin+Dark:700' rel='stylesheet' type='text/css'>
@@ -28,11 +30,60 @@
             </div>
         </nav>
         <!--FOOTER END-->
-        <main class="fluid-container">
-            <h1 class="titleHighliht">Dados para Reserva</h1>
+        <main class="container-fluid">
+            <div class="row">
+                <h2 class="col-md-12">Solicitar Reserva</h2>
+                <div class="col-md-4">
+                    <h4 class="col-md-4">Data início</h3>
+                    <div id="dtEntrada"></div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="col-md-4">Data termino</h3>
+                    <div id="dtSaida"></div>
+                </div>
+                <div class="row col-md-4">
+                    <table class="table table-striped">
+                        <th>Tipo Quarto</hr>
+                        <th>Quantidade</hr>
+                        <tr>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="number">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </main>
         
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script>
+            $('#dtEntrada').datepicker({
+                todayBtn: true,
+                language: "pt-BR",
+                calendarWeeks: true,
+                todayHighlight: true
+            });
+            $('#dtSaida').datepicker({
+                todayBtn: true,
+                language: "pt-BR",
+                calendarWeeks: true,
+                todayHighlight: true
+            });
+        </script>
     </body>
 </html>
