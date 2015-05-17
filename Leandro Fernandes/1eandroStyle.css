@@ -1,0 +1,14 @@
+.container {
+    background-color: lightgray;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #afafaf;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.mostraDados {
+    font-size: 25px;
+    
+}
+
