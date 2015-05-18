@@ -62,8 +62,23 @@
                             <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deleteRoomRow(this)"></i></td>
                         </tr>
                     </table>
+                    <i id="addRoom" class="fa fa-plus fa-2x greenIcon"></i>
+                    <table id="tablePersons" class="table table-striped">
+                        <th>Quantidade</hr>
+                        <th>Idade</hr>
+                        <th></th>
+                        <tr>
+                            <td>
+                                <input type="number">
+                            </td>
+                            <td>
+                                <input type="number">
+                            </td>
+                            <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deletePersonRow(this)"></i></td>
+                        </tr>
+                    </table>
+                    <i id="addPerson" class="fa fa-plus fa-2x greenIcon"></i>
                 </div>
-                <i id="addRoom" class="fa fa-plus fa-2x greenIcon"></i>
             </div>
         </main>
         
@@ -72,6 +87,11 @@
             function deleteRoomRow(r) {
                     var i = r.parentNode.parentNode.rowIndex;
                     document.getElementById("tableRooms").deleteRow(i);
+                }
+            
+            function deletePersonRow(r) {
+                    var i = r.parentNode.parentNode.rowIndex;
+                    document.getElementById("tablePersons").deleteRow(i);
                 }
         </script>
         <script src="js/jquery-1.11.3.min.js"></script>
@@ -94,7 +114,9 @@
                 $('#addRoom').click(function(){
                     $('#tableRooms > tbody:last').append('<tr> <td> <select> <option value="Standard">Standard</option> <option value="Master">Master</option> <option value="Luxo">Luxo</option> <option value="Master Luxo">Master Luxo</option> </select> </td> <td> <input type="number"> </td> <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deleteRoomRow(this)"></i></td> </tr>');
                 });
-                
+                $('#addPerson').click(function(){
+                    $('#tablePersons > tbody:last').append('<tr> <td> <input type="number"> </td> <td> <input type="number"> </td> <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deletePersonRow(this)"></i></td> </tr>');
+                });
             });
             
         </script>
