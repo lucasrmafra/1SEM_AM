@@ -9,6 +9,7 @@
         <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
         <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
         <link href="css/default.css" type="text/css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Palanquin+Dark:700' rel='stylesheet' type='text/css'>
     </head>
@@ -42,48 +43,60 @@
                     <div id="dtSaida"></div>
                 </div>
                 <div class="row col-md-4">
-                    <table class="table table-striped">
+                    <table id="tableRooms" class="table table-striped">
                         <th>Tipo Quarto</hr>
                         <th>Quantidade</hr>
+                        <th></th>
                         <tr>
                             <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
+                                <select>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Master">Master</option>
+                                    <option value="Luxo">Luxo</option>
+                                    <option value="Master Luxo">Master Luxo</option>
+                                </select>
                             </td>
                             <td>
                                 <input type="number">
                             </td>
+                            <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deleteRoomRow(this)"></i></td>
                         </tr>
                     </table>
                 </div>
+                <i id="addRoom" class="fa fa-plus fa-2x greenIcon"></i>
             </div>
         </main>
         
+        
+        <script>
+            function deleteRoomRow(r) {
+                    var i = r.parentNode.parentNode.rowIndex;
+                    document.getElementById("tableRooms").deleteRow(i);
+                }
+        </script>
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap-datepicker.min.js"></script>
         <script>
-            $('#dtEntrada').datepicker({
-                todayBtn: true,
-                language: "pt-BR",
-                calendarWeeks: true,
-                todayHighlight: true
+            $(document).ready(function(){
+                $('#dtEntrada').datepicker({
+                    todayBtn: true,
+                    language: "pt-BR",
+                    calendarWeeks: true,
+                    todayHighlight: true
+                });
+                $('#dtSaida').datepicker({
+                    todayBtn: true,
+                    language: "pt-BR",
+                    calendarWeeks: true,
+                    todayHighlight: true
+                });
+                $('#addRoom').click(function(){
+                    $('#tableRooms > tbody:last').append('<tr> <td> <select> <option value="Standard">Standard</option> <option value="Master">Master</option> <option value="Luxo">Luxo</option> <option value="Master Luxo">Master Luxo</option> </select> </td> <td> <input type="number"> </td> <td><i class="fa fa-minus-circle fa-2x redIcon" onclick="deleteRoomRow(this)"></i></td> </tr>');
+                });
+                
             });
-            $('#dtSaida').datepicker({
-                todayBtn: true,
-                language: "pt-BR",
-                calendarWeeks: true,
-                todayHighlight: true
-            });
+            
         </script>
     </body>
 </html>
