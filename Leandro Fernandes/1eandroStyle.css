@@ -1,14 +1,31 @@
 .container {
-    background-color: lightgray;
-    margin-top: 20px;
-    border-radius: 20px;
-    padding: 0px 20px 20px 20px;
-    border: 1px solid #afafaf;
-    font-family: 'Orbitron', sans-serif;
+	background-color: lightgray;
+	margin-top: 20px;
+	border-radius: 20px;
+	padding: 0px 20px 20px 20px;
+	border: 1px solid #afafaf;
+	font-family: 'Orbitron', sans-serif;
+}
+
+#masterLabel {
+	font-size: 40px;
 }
 
 .mostraDados {
-    font-size: 25px;
-    
+	font-size: 17px;
+	float: right;
 }
 
+.checkoutTitle {
+	font-family: 'Orbitron', sans-serif;
+}
+
+.panel-default {
+	background-color: #696969;
+	color: white;
+	border-radius: 10px;
+}
+
+.subtotal {
+	float: right;
+}
